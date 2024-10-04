@@ -25,6 +25,6 @@ urlpatterns = [
     path('', root_view),
     path('contexto/', contexto),
     path('sobre/', my_view),
-    path('user/<str:username>/', user_view)
+    path('user/<str:username>/', user_view),
     path('anahelouise/', anahelouise),
 ]
