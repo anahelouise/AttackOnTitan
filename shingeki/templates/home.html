@@ -1,13 +1,21 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My View</title>
+    <link rel="stylesheet" href="{% static 'shingeki/css/home.css' %}">
 </head>
 <body>
-    <h1>Bem-vindo à Minha Visão!</h1>
-    <p>Esta é uma página de exemplo para a sua "my_view".</p>
-    <button>Clique Aqui</button>
+    <header>
+        <nav>
+            <h1>Attack On Titan Wiki</h1>
+            <a href="">Sobre</a>
+            <a href="">Personagems</a>
+            <a href="">Episodios</a>
+        </nav>
+    </header>
 </body>
 </html>
+
