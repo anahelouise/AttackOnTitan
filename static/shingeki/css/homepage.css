@@ -12,11 +12,12 @@ header
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 100px;
+  padding: 10px 100px;
   z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  text-transform: uppercase;
 }
 header .logo
 {
@@ -24,25 +25,34 @@ header .logo
   text-transform: uppercase;
   cursor: pointer;
 }
-.toggle
-{
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: url(https://i.ibb.co/HrfVRcx/menu.png);
-  background-repeat: no-repeat;
-  background-size: 30px;
-  background-position: center;
+
+.toggle, 
+.toggle a {
+  text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none; /* Remove sublinhado padrão */
+  color: #fff; /* Cor do texto */
+  justify-content: space-between;
+  padding: 15px;
+  position: relative; /* Necessário para posicionar o pseudo-elemento */
+  overflow: hidden; /* Garante que o retângulo não saia do contêiner */
 }
-.toggle.active
-{
-  background: url(https://i.ibb.co/rt3HybH/close.png);
-  background-repeat: no-repeat;
-  background-size: 25px;
-  background-position: center;
-  cursor: pointer;
-}
+.toggle a::after {
+    content: ''; /* Necessário para o pseudo-elemento */
+    position: absolute; /* Posiciona o retângulo em relação ao link */
+    left: 0;
+    bottom: 0; /* Alinha o retângulo na parte inferior */
+    height: 4px; /* Altura do retângulo */
+    width: 100%; /* Largura do retângulo igual à largura do link */
+    background-color: #ffffff; /* Cor do retângulo */
+    transform: scaleX(0); /* Inicialmente escondido */
+    transition: transform 0.3s ease; /* Efeito suave de transição */
+  }
+  
+  /* Altera o estado do retângulo ao passar o mouse */
+  .toggle a:hover::after {
+    transform: scaleX(1); /* Expande o retângulo para preencher a largura do link */
+  }
 .showcase
 {
   position: absolute;
@@ -96,7 +106,7 @@ header .logo
   line-height: 1em;
   text-transform: uppercase;
 }
-.text h3
+.text h4
 {
   font-size: 4em;
   font-weight: 700;
@@ -155,35 +165,7 @@ header .logo
 {
   transform: scale(0.5) translateY(-15px);
 }
-.menu
-{
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.menu ul
-{
-  position: relative;
-}
-.menu ul li
-{
-  list-style: none;
-}
-.menu ul li a
-{
-  text-decoration: none;
-  font-size: 24px;
-  color: #111;
-}
-.menu ul li a:hover
-{
-  color: #03a9f4; 
-}
+
 
 @media (max-width: 991px)
 {
@@ -196,7 +178,7 @@ header .logo
   {
     font-size: 3em;
   }
-  .text h3
+  .text h4
   {
     font-size: 2em;
   }
