@@ -2,22 +2,22 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-def my_view(request):
-    return HttpResponse("Uma teste string de resposta")
+#def my_view(request):
+    #return HttpResponse("Uma teste string de resposta")
 
 def home(request):
     return render(request, "homepage.html")
 
-def user_view(request, username):
-    return HttpResponse(f"Perfil do usuário: {username}")
+#def user_view(request, username):
+    #return HttpResponse(f"Perfil do usuário: {username}")
 
 #def root_view(request):
-    return HttpResponse("Estamos na Raiz. Porta 8000")
+    #return HttpResponse("Estamos na Raiz. Porta 8000")
 
-def root_view(request):
-    return render(request, "homepage.html")
+#def root_view(request):
+    #return render(request, "homepage.html")
 
-def contexto(request):
+#def contexto(request):
     context = {
         'nome': 'Ana Helouise',
         'idade': 20,
