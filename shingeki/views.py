@@ -11,8 +11,11 @@ def home(request):
 def user_view(request, username):
     return HttpResponse(f"Perfil do usuário: {username}")
 
-def root_view(request):
+#def root_view(request):
     return HttpResponse("Estamos na Raiz. Porta 8000")
+
+def root_view(request):
+    return render(request, "homepage.html")
 
 def contexto(request):
     context = {
