@@ -6,7 +6,7 @@ def my_view(request):
     return HttpResponse("Uma teste string de resposta")
 
 def home(request):
-    return render(request, "home.html")
+    return render(request, "homepage.html")
 
 def user_view(request, username):
     return HttpResponse(f"Perfil do usuário: {username}")
