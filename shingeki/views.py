@@ -2,25 +2,14 @@ from django.http import HttpResponse
 from django.shortcuts import render
 
 # Create your views here.
-def my_view(request):
-    return HttpResponse("Uma teste string de resposta")
-
 def home(request):
-    return render(request, "homepage.html")
-
-def user_view(request, username):
-    return HttpResponse(f"Perfil do usuário: {username}")
+    return render(request, "home.html") #pagina home do projeto
 
 def root_view(request):
-    return render(request, "homepage.html")
+    return render(request, "home.html") #pagina inicial do runserver
 
-def contexto(request):
-    context = {
-        'nome': 'Ana Helouise',
-        'idade': 20,
-        'hobbies': ['Ouvir musicas', 'Assistir Shingeki no Kyojin', 'Programar']
-    }
-    return render(request, 'contexto.html', context)
+def dev(request):
+    return render(request, "dev.html") #Pagina sobre a desenvolvedora
 
-def anahelouise(request):
-    return render(request, "anahelouise.html")
+def tropas(request):
+    return render(request, "tropas.html") #Pagina sobre as tropas

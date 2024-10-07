@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercito Real</title>
+    <link rel="stylesheet" href="{% static 'shingeki/css/tropas.css' %}">
+</head>
+<body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Attack On Titan Wiki</h2>
+        <div class="toggle">
+          <a href="{% url 'home' %}">Home</a>
+          <a href="#">Universo</a>
+          <a href="#">Personagens</a>
+          <a href="#">Titãs</a>
+          <a href="{% url 'tropas' %}">Tropas</a>
+          <a href="#">Contato</a>
+        </div>
+      </header>
+      <!-- <div class="overlay"></div> -->
+      <div class="text">
+        <h2>Exercito Real</h2> 
+        <h4>E suas três divisões</h4>
+        <p>A defesa da Humanidade contra os Titãs é um exército profissional de tempo integral treinado para lidar com as bestas. Possui três divisões: a Divisão de Reconhecimento, a Guarnição das Muralhas e a Brigada de Polícia Militar, os soldados de primeiro escalão servem como guardas pessoais do rei e mantém a ordem dentro das Muralhas</p>
+      </div>
+    </section>
+    <section class="exploracao">
+      <div class="info">
+        <img src="{% static 'shingeki/img/exploração.jpg' %}" alt="Simbolo da Tropa de Exploração">
+        <div class="text">
+          <h6>Divisão de Reconhecimento</h6>
+          <p>A Divisão de Reconhecimento, ou Tropa de Exploração, é uma unidade militar em Attack on Titan responsável por explorar o mundo além das muralhas e enfrentar os Titãs. Seus membros, corajosos e habilidosos, arriscam suas vidas para descobrir segredos sobre os Titãs e proteger a humanidade. Mesmo com altas baixas, eles persistem na busca pela liberdade e conhecimento.</p>
+          <button>Saiba mais</button>
+        </div>
+      </div>
+    </section>
+    <section class="policia">
+      <div class="info">
+        <img src="{% static 'shingeki/img/policia.jpg' %}" alt="Simbolo da Brigada de Polícia Militar">
+        <div class="text">
+          <h6>Brigada de Polícia Militar</h6>
+          <p>A Brigada de Polícia Militar em Attack on Titan é responsável pela manutenção da ordem dentro das muralhas, garantindo a segurança e o bem-estar da população. Sendo a força militar mais privilegiada, seus membros são selecionados entre os melhores cadetes, mas muitos se juntam por desejo de conforto e estabilidade, longe dos perigos enfrentados pelos soldados das Tropas de Exploração. Embora sua reputação seja manchada por corrupção e incompetência, a Brigada ainda desempenha um papel crucial na manutenção da paz nas áreas mais internas, protegendo a elite da sociedade.</p>
+          <button>Saiba mais</button>
+        </div>
+      </div>
+    </section>
+    <section class="guarnicao">
+      <div class="info">
+        <img src="{% static 'shingeki/img/guarnição.jpg' %}" alt="Simbolo da Guarnição">
+        <div class="text">
+          <h6>Guarnição das Muralhas</h6>
+          <p>A Guarnição das Muralhas em "Attack on Titan" é uma das facções cruciais na luta pela sobrevivência da humanidade. Composta por soldados dedicados e corajosos, essa unidade é encarregada de proteger as muralhas que cercam as cidades e deter as ameaças dos Titãs. A constante vigilância e as estratégias defensivas da guarnição são fundamentais para garantir a segurança dos civis e manter a esperança em tempos sombrios. Entretanto, a pressão psicológica e a incessante luta contra os Titãs revelam os dilemas morais e os sacrifícios que esses guerreiros devem enfrentar, refletindo a complexidade da luta pela sobrevivência em um mundo repleto de perigos.</p>
+          <button>Saiba mais</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
+ 
+ 
+ 
