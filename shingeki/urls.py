@@ -18,10 +18,10 @@ from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import path
 
-from shingeki.views import root_view, home, dev, tropas
+from shingeki.views import root_view, inicio, dev, tropas
 
 urlpatterns = [
-    path('', home, name='home'),
+    path('inicio/', inicio, name='inicio'),
     path('', root_view),
     path('dev/', dev),
     path('tropas/', tropas, name='tropas'),
