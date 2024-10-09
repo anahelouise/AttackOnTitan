@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  z-index: 1000;
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+header .logo {
+  color: black;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.toggle, 
+.toggle a {
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+}
+
+.toggle a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #000000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.toggle a:hover::after {
+  transform: scaleX(1);
+}
+
+.nove-titans {
+    text-align: center;
+    padding: 70px 20px;
+  }
+  
+.nove-titans h1 {
+    margin-top: 30px;
+    font-size: 2.5em;
+    margin-bottom: 3px;
+  }
+  
+  .nove-titans p {
+    font-size: 1.0em;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .titans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* colunas */
+    gap: 20px;
+  }
+  
+  .cartao-titans {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .cartao-titans img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .cartao-titans h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .cartao-titans span {
+    display: block;
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 15px;
+  }
+  
+  .cartao-titans p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .cartao-titans a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+  }
+  .view-all {
+    margin-top: 30px;
+  }
+  
+  .view-all a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .view-all a:hover {
+    background-color: #000000;
+    color: #fff;
+  }
+
+  

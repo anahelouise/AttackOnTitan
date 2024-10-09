@@ -4,27 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="{% static 'shingeki/css/root.css' %}">
+    <title>Attack On Titan Wiki</title>
+    <link rel="stylesheet" href="{% static 'shingeki\css\home.css' %}">
 </head>
 <body>
   <section class="showcase">
     <header>
       <h2 class="logo">Attack On Titan Wiki</h2>
       <div class="toggle">
-        <a href="{% url 'inicio' %}">Home</a>
-        <a href="#">Universo</a>
-        <a href="#">Personagens</a>
-        <a href="#">Titãs</a>
-        <a href="{% url 'tropas' %}">Tropas</a>
+        <a href="{% url 'home' %}">Inicio</a>
+        <a href="">Personagens</a>
+        <a href="{% url 'titans' %}">Titãs</a>
+        <a href="{% url 'tropas' %}">Forças Militares</a>
+        <a href="{% url 'muralhas' %}">Muralhas</a>
         <a href="#">Contato</a>
       </div>
     </header>
     <!-- <div class="overlay"></div> -->
+    <img src="{% static 'shingeki/img/image.jpg' %}" alt="">
     <div class="text">
-      <h2>Bem-vindos ao</h2> 
-      <h4>Attack On Titan Wiki</h4>
-      <p>Attack on Titan Wiki é uma enciclopédia colaborativa dedicada ao universo de Shingeki no Kyojin (Attack on Titan), o mangá e anime épico criado por Hajime Isayama. Aqui, fãs e curiosos podem explorar tudo sobre esse fascinante mundo, desde os mistérios por trás dos Titãs até os personagens icônicos como Eren Yeager, Mikasa Ackerman, Levi Ackerman e muitos outros.</p>
+      <p>Attack on Titan Wiki é uma enciclopédia dedicada ao universo de Shingeki no Kyojin (Attack on Titan), o mangá e anime criado por Hajime Isayama. Aqui, você pode encontrar informações sobre esse mundo, os mistérios por trás dos Titãs, as muralhas e os personagens icônicos como Eren Yeager, Mikasa Ackerman, Levi Ackerman etc...</p>
     </div>
   </section>
 </body>

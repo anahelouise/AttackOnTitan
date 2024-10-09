@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attack On Titan Wiki</title>
+    <link rel="stylesheet" href="{% static 'shingeki\css\home.css' %}">
+</head>
+<body>
+  <section class="showcase">
+    <header>
+      <h2 class="logo">Attack On Titan Wiki</h2>
+      <div class="toggle">
+        <a href="{% url 'home' %}">Inicio</a>
+        <a href="">Personagens</a>
+        <a href="{% url 'titans' %}">Titãs</a>
+        <a href="{% url 'tropas' %}">Forças Militares</a>
+        <a href="{% url 'muralhas' %}">Muralhas</a>
+        <a href="#">Contato</a>
+      </div>
+    </header>
+    <!-- <div class="overlay"></div> -->
+    <img src="{% static 'shingeki/img/image.jpg' %}" alt="">
+    <div class="text">
+      <p>Attack on Titan Wiki é uma enciclopédia dedicada ao universo de Shingeki no Kyojin (Attack on Titan), o mangá e anime criado por Hajime Isayama. Aqui, você pode encontrar informações sobre esse mundo, os mistérios por trás dos Titãs, as muralhas e os personagens icônicos como Eren Yeager, Mikasa Ackerman, Levi Ackerman etc...</p>
+    </div>
+  </section>
+  <section class="tres-muralhas">
+    <h1>As Muralhas</h1>
+    <p>A proteção da humanidade contra os titãs</p>
+    <div class="muralhas">
+      <!-- Maria -->
+      <div class="cartao">
+        <img src="{% static 'shingeki/img/Wall-Maria.jpg' %}" alt="Maria">
+        <h4>Maria</h4>
+        <span>Defesa</span>
+        <p>A muralha mais externa, que serve como a primeira linha de defesa contra os Titãs. Ela foi a primeira a ser quebrada pelos Titãs, o que levou à invasão de Wall Rose.</p>
+        <a href="#">Leia mais</a>
+      </div>
+  
+      <!-- Rose -->
+      <div class="cartao">
+        <img src="{% static 'shingeki/img/Wall-Rose.jpg' %}" alt="Rose">
+        <h4>Rose</h4>
+        <span>Refúgio</span>
+        <p>Localizada no meio, essa muralha oferece uma proteção adicional à população que vive entre Maria e Sina. É a segunda linha de defesa e abriga muitas cidades e vilarejos.</p>
+        <a href="#">Leia mais</a>
+      </div>
+  
+      <!-- Sina -->
+      <div class="cartao">
+        <img src="{% static 'shingeki/img/Wall-Sina.jpg' %}" alt="Sina">
+        <h4>Sina</h4>
+        <span>Elite</span>
+        <p>A muralha mais interna e a mais segura, onde se localizam as classes mais altas e a elite da sociedade. É também o lar da capital, onde as decisões importantes são tomadas.</p>
+        <a href="#">Leia mais</a>
+      </div>
+    </div>
+  </section>  
+  <section class="forcas-militares">
+    <h1>Forças Militares</h1>
+    <p>Cada força com funções e características distintas</p>
+  
+    <div class="tropas">
+      <!-- Divisão de Reconhecimento -->
+      <div class="cartao-tropas">
+        <img src="{% static 'shingeki/img/exploracao.jpg' %}" alt="Divisão de Reconhecimento">
+        <h4>Divisão de Reconhecimento</h4>
+        <span>Tropa de Exploração</span>
+        <p>São os soldados mais ousados, encarregados de explorar além das muralhas para descobrir mais sobre os Titãs e lutar diretamente contra eles.</p>
+        <a href="#">Leia mais</a>
+      </div>
+  
+      <!-- Brigada de Polícia Militar -->
+      <div class="cartao-tropas">
+        <img src="{% static 'shingeki/img/militar.jpg' %}" alt="Brigada de Polícia Militar">
+        <h4>Brigada de Polícia Militar</h4>
+        <span>Brigada Militar</span>
+        <p>Responsável pela proteção interna, especialmente dentro da Muralha Sina, cuidando da segurança da elite e mantendo a ordem pública.</p>
+        <a href="#">Leia mais</a>
+      </div>
+  
+      <!-- Guarnição das Muralhas -->
+      <div class="cartao-tropas">
+        <img src="{% static 'shingeki/img/guarnicao.jpg' %}" alt="Guarnição das Muralhas">
+        <h4>Guarnição das Muralhas</h4>
+        <span>Tropa Estacionária</span>
+        <p>Eles defendem as muralhas e a população que vive dentro delas. Sua função principal é manter a segurança e as defesas das muralhas.</p>
+        <a href="#">Leia mais</a>
+      </div>
+  
+      <!-- Unidade de Treinamento -->
+      <div class="cartao-tropas">
+        <img src="{% static 'shingeki/img/trainee.jpg' %}" alt="Unidade de Treinamento">
+        <h4>Unidade de Treinamento</h4>
+        <span>Training Corps</span>
+        <p>A Unidade de Treinamento é responsável por preparar os novos recrutas para se juntarem a uma das divisões militares.</p>
+        <a href="#">Leia mais</a>
+      </div>
+    </div>
+  </section>   
+    <section class="nove-titans">
+        <h1>Os Nove Titãs</h1>
+        <p>Esse são os Titãs originais herdados da fundadora Ymir Fritz</p>
+    
+        <div class="titans">
+            <!-- Titã de Ataque -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-ataque.jpg' %}" alt="Titã de Ataque">
+                <h4>Titã de Ataque</h4>
+                <span>Attack Titan</span>
+                <p>Conhecido por sua força combativa e pela habilidade de lutar pela liberdade. Tem a capacidade de acessar as memórias dos portadores passados e futuros.</p>
+                <a href="#">Leia mais</a>
+            </div>
+    
+            <!-- Titã Femea -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-femea.jpg' %}" alt="Titã Fêmea">
+                <h4>Titã Fêmea</h4>
+                <span>Female Titan</span>
+                <p>Tem alta versatilidade de combate, sendo ágil e forte. Pode chamar outros Titãs com gritos e endurecer partes do corpo.</p>
+                <a href="#">Leia mais</a>
+            </div>
+    
+            <!-- Titã Colossal -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-colossal.jpg' %}" alt="Titã Colossal">
+                <h4>Titã Colossal</h4>
+                <span>Colossal Titan</span>
+                <p>Gigantesco e capaz de causar explosões massivas ao se transformar, sua altura é sua principal vantagem.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        
+            <!-- Titã Blindado -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-blindado.jpg' %}" alt="Titã Blindado">
+                <h4>Titã Blindado</h4>
+                <span>Armored Titan</span>
+                <p>Possui uma pele dura semelhante a uma armadura, oferecendo grande defesa e poder de ataque.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Titã Mandibula -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-mandibula.jpg' %}" alt="Titã Mandibula">
+                <h4>Titã Mandibula</h4>
+                <span>Jaw Titan</span>
+                <p>Pequeno, mas extremamente ágil e forte. Suas mandíbulas e garras podem destruir quase qualquer material.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Titã Quadrupede -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-quadrupede.jpg' %}" alt="Titã Quadrupede">
+                <h4>Titã Quadrupede</h4>
+                <span>Cart Titan</span>
+                <p>Tem uma forma mais quadrúpede, sendo usado principalmente para transporte devido à sua resistência e velocidade.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            
+                <!-- Titã Martelo de Guerra -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-martelo.jpg' %}" alt="Titã Martelo de Guerra">
+                <h4>Titã Martelo de Guerra</h4>
+                <span>War Hammer Titan</span>
+                <p>Pode criar armas e estruturas a partir de seu corpo endurecido, oferecendo flexibilidade em combate.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Titã Bestial -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-bestial.jpg' %}" alt="Titã Bestial">
+                <h4>Titã Bestial</h4>
+                <span>Beast Titan</span>
+                <p>Possui aparência e habilidades animalescas. Seu portador tem uma capacidade de arremesso excepcional.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Titã Fundador -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-fundador.jpg' %}" alt="Titã Fundador">
+                <h4>Titã Fundador</h4>
+                <span>Founding Titan</span>
+                <p>Detém o poder de controlar outros Titãs, modificar memórias e manipular corpos de Eldianos.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        </div>
+    
+        <div class="view-all">
+            <a href="#">Ver todos</a>
+        </div>
+     </section>  
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Os Nove Titãs</title>
+    <link rel="stylesheet" href="{% static 'shingeki\css\titans.css' %}">
+</head>
+<body>
+  <section class="showcase">
+    <header>
+        <h2 class="logo">Attack On Titan Wiki</h2>
+        <div class="toggle">
+          <a href="{% url 'home' %}">Inicio</a>
+          <a href="">Personagens</a>
+          <a href="{% url 'titans' %}">Titãs</a>
+          <a href="{% url 'tropas' %}">Forças Militares</a>
+          <a href="{% url 'muralhas' %}">Muralhas</a>
+          <a href="#">Contato</a>
+        </div>
+      </header>
+    <!-- <div class="overlay"></div> -->
+  </section>   
+    <section class="nove-titans">
+        <h1>Os Nove Titãs</h1>
+        <p>Esse são os Titãs originais herdados da fundadora Ymir Fritz</p>
+    
+        <div class="titans">
+            <!-- Titã de Ataque -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-ataque.jpg' %}" alt="Titã de Ataque">
+                <h4>Titã de Ataque</h4>
+                <span>Attack Titan</span>
+                <p>Conhecido por sua força combativa e pela habilidade de lutar pela liberdade. Tem a capacidade de acessar as memórias dos portadores passados e futuros.</p>
+                <a href="#">Leia mais</a>
+            </div>
+    
+            <!-- Titã Femea -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-femea.jpg' %}" alt="Titã Fêmea">
+                <h4>Titã Fêmea</h4>
+                <span>Female Titan</span>
+                <p>Tem alta versatilidade de combate, sendo ágil e forte. Pode chamar outros Titãs com gritos e endurecer partes do corpo.</p>
+                <a href="#">Leia mais</a>
+            </div>
+    
+            <!-- Titã Colossal -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-colossal.jpg' %}" alt="Titã Colossal">
+                <h4>Titã Colossal</h4>
+                <span>Colossal Titan</span>
+                <p>Gigantesco e capaz de causar explosões massivas ao se transformar, sua altura é sua principal vantagem.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        
+            <!-- Titã Blindado -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-blindado.jpg' %}" alt="Titã Blindado">
+                <h4>Titã Blindado</h4>
+                <span>Armored Titan</span>
+                <p>Possui uma pele dura semelhante a uma armadura, oferecendo grande defesa e poder de ataque.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Titã Mandibula -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-mandibula.jpg' %}" alt="Titã Mandibula">
+                <h4>Titã Mandibula</h4>
+                <span>Jaw Titan</span>
+                <p>Pequeno, mas extremamente ágil e forte. Suas mandíbulas e garras podem destruir quase qualquer material.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Titã Quadrupede -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-quadrupede.jpg' %}" alt="Titã Quadrupede">
+                <h4>Titã Quadrupede</h4>
+                <span>Cart Titan</span>
+                <p>Tem uma forma mais quadrúpede, sendo usado principalmente para transporte devido à sua resistência e velocidade.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            
+                <!-- Titã Martelo de Guerra -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-martelo.jpg' %}" alt="Titã Martelo de Guerra">
+                <h4>Titã Martelo de Guerra</h4>
+                <span>War Hammer Titan</span>
+                <p>Pode criar armas e estruturas a partir de seu corpo endurecido, oferecendo flexibilidade em combate.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Titã Bestial -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-bestial.jpg' %}" alt="Titã Bestial">
+                <h4>Titã Bestial</h4>
+                <span>Beast Titan</span>
+                <p>Possui aparência e habilidades animalescas. Seu portador tem uma capacidade de arremesso excepcional.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Titã Fundador -->
+            <div class="cartao-titans">
+                <img src="{% static 'shingeki/img/titan-fundador.jpg' %}" alt="Titã Fundador">
+                <h4>Titã Fundador</h4>
+                <span>Founding Titan</span>
+                <p>Detém o poder de controlar outros Titãs, modificar memórias e manipular corpos de Eldianos.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        </div>
+    
+        <div class="view-all">
+            <a href="#">Ver todos</a>
+        </div>
+     </section>  
+</body>
+</html>

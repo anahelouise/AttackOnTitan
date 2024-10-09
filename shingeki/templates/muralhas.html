@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muralhas</title>
+    <link rel="stylesheet" href="{% static 'shingeki\css\muralhas.css' %}">
+</head>
+<body>
+  <section class="showcase">
+    <header>
+        <h2 class="logo">Attack On Titan Wiki</h2>
+        <div class="toggle">
+          <a href="{% url 'home' %}">Inicio</a>
+          <a href="">Personagens</a>
+          <a href="{% url 'titans' %}">Titãs</a>
+          <a href="{% url 'tropas' %}">Forças Militares</a>
+          <a href="{% url 'muralhas' %}">Muralhas</a>
+          <a href="#">Contato</a>
+        </div>
+      </header>
+    <!-- <div class="overlay"></div> -->
+    <section class="tres-muralhas">
+        <h1>As Muralhas</h1>
+        <p>A proteção da humanidade contra os titãs</p>
+        <div class="muralhas">
+        <!-- Maria -->
+        <div class="cartao">
+            <img src="{% static 'shingeki/img/Wall-Maria.jpg' %}" alt="Maria">
+            <h4>Maria</h4>
+            <span>Defesa</span>
+            <p>A muralha mais externa, que serve como a primeira linha de defesa contra os Titãs. Ela foi a primeira a ser quebrada pelos Titãs, o que levou à invasão de Wall Rose.</p>
+            <a href="#">Leia mais</a>
+        </div>
+    
+        <!-- Rose -->
+        <div class="cartao">
+            <img src="{% static 'shingeki/img/Wall-Rose.jpg' %}" alt="Rose">
+            <h4>Rose</h4>
+            <span>Refúgio</span>
+            <p>Localizada no meio, essa muralha oferece uma proteção adicional à população que vive entre Maria e Sina. É a segunda linha de defesa e abriga muitas cidades e vilarejos.</p>
+            <a href="#">Leia mais</a>
+        </div>
+    
+        <!-- Sina -->
+        <div class="cartao">
+            <img src="{% static 'shingeki/img/Wall-Sina.jpg' %}" alt="Sina">
+            <h4>Sina</h4>
+            <span>Elite</span>
+            <p>A muralha mais interna e a mais segura, onde se localizam as classes mais altas e a elite da sociedade. É também o lar da capital, onde as decisões importantes são tomadas.</p>
+            <a href="#">Leia mais</a>
+        </div>
+        </div>
+    </section> 
+</body>
+</html>
