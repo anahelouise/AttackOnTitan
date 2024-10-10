@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.http import HttpResponse
 from django.urls import path
 
-from shingeki.views import root_view, home, dev, tropas, titans, muralhas
+from shingeki.views import root_view, home, dev, tropas, titans, muralhas, personagens
 
 urlpatterns = [
     path('home/', home, name='home'),
@@ -27,4 +27,5 @@ urlpatterns = [
     path('tropas/', tropas, name='tropas'),
     path('titans/', titans, name='titans'),
     path('muralhas/', muralhas, name='muralhas'),
+    path('personagens/', personagens, name='personagens'),
 ]  

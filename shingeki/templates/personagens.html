@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personagens</title>
+    <link rel="stylesheet" href="{% static 'shingeki\css\personagens.css' %}">
+</head>
+<body>
+  <section class="showcase">
+    <header>
+        <h2 class="logo">Attack On Titan Wiki</h2>
+        <div class="toggle">
+          <a href="{% url 'home' %}">Inicio</a>
+          <a href="{% url 'personagens' %}">Personagens</a>
+          <a href="{% url 'titans' %}">Titãs</a>
+          <a href="{% url 'tropas' %}">Forças Militares</a>
+          <a href="{% url 'muralhas' %}">Muralhas</a>
+          <a href="#">Contato</a>
+        </div>
+      </header>
+    <!-- <div class="overlay"></div> -->
+  </section>   
+    <section class="os-personagens">
+        <h1>Personagens</h1>
+        <p>Conheça os personagens</p>
+    
+        <div class="personagens">
+            <!-- Eren Yeager -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/ErenYaeger.jpg' %}" alt="Eren Yeager">
+                <h4>Eren Yeager</h4>
+                <span>Divisão de Reconhecimento</span>
+                <p>Eren é o protagonista da série, cuja determinação em erradicar os Titãs surge após a destruição de sua cidade natal e a morte de sua mãe. Ele é impulsivo e muitas vezes age por instinto, o que o leva a se colocar em situações perigosas. Eren possui a habilidade de se transformar no Titã de Ataque e, mais tarde, descobre que também é o portador do Titã Fundador, o que o torna uma figura central na luta contra a opressão.</p>
+                <a href="#">Leia mais</a>
+            </div>
+    
+            <!-- Mikasa Ackerman -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/MikasaAckerman.jpg' %}" alt="Mikasa Ackerman">
+                <h4>Mikasa Ackerman</h4>
+                <span>Divisão de Reconhecimento</span>
+                <p>Mikasa é uma das melhores combatentes da Divisão de Reconhecimento e é conhecida por sua força e habilidades excepcionais em combate. Desde que foi salva por Eren quando era criança, ela se tornou sua protetora, mostrando uma lealdade inabalável. Sua personalidade é muitas vezes séria, mas ela também demonstra uma profunda vulnerabilidade e um desejo de proteger aqueles que ama.</p>
+                <a href="#">Leia mais</a>
+            </div>
+    
+            <!-- Armin Arlert -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/ArminArlert.jpg' %}" alt="Armin Arlert">
+                <h4>Armin Arlert</h4>
+                <span>Divisão de Reconhecimento</span>
+                <p>Armin é um amigo próximo de Eren e Mikasa, cuja inteligência e capacidade de estratégia o destacam em batalha. Embora inicialmente inseguro e considerado fraco, ele se torna um líder respeitado e um pensador crítico, frequentemente encontrando soluções criativas para problemas complexos. Sua habilidade de persuadir e inspirar os outros é fundamental para a equipe.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        
+            <!-- Erwin Smith -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/ErwinSmith.jpg' %}" alt="Erwin Smith">
+                <h4>Erwin Smith</h4>
+                <span>Divisão de Reconhecimento</span>
+                <p>Erwin é o carismático comandante da Divisão de Reconhecimento, conhecido por suas táticas inovadoras e sua habilidade em motivar os soldados. Ele tem uma visão clara de liberdade e está disposto a fazer sacrifícios para alcançá-la, mesmo que isso signifique colocar sua vida em risco. Sua liderança e determinação o tornam uma figura admirada entre seus subordinados.<p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Levi Ackerman -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/LeviAckerman.jpg' %}" alt="Levi Ackerman">
+                <h4>Levi Ackerman</h4>
+                <span>Divisão de Reconhecimento</span>
+                <p>Levi é um dos soldados mais habilidosos da Divisão de Reconhecimento e é frequentemente considerado o melhor lutador contra Titãs. Sua personalidade fria e distante pode fazer parecer que ele não se importa com os outros, mas na realidade, ele valoriza a vida de seus companheiros e se esforça para protegê-los. Levi tem uma história trágica que o moldou como pessoa.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Hange Zoe -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/HangeZoe.jpg' %}" alt="Hange Zoe">
+                <h4>Hange Zoe</h4>
+                <span>Divisão de Reconhecimento</span>
+                <p>Hange é a líder da Divisão de Reconhecimento, apaixonada por estudar Titãs e entender suas origens. Ela é excêntrica e entusiasta, frequentemente fazendo perguntas curiosas sobre os Titãs. Sua curiosidade a leva a assumir riscos, mas também a torna uma aliada valiosa na luta contra os Titãs. Hange possui uma forte moral e se preocupa profundamente com seus amigos.</p>
+                <a href="#">Leia mais</a>
+            </div>
+            
+                <!-- Reiner Braun -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/ReinerBraun.jpg' %}" alt="Reiner Braun">
+                <h4>Reiner Braun</h4>
+                <span>Divisão de Reconhecimento (infiltrado)</span>
+                <p>Reiner é um membro da Divisão de Reconhecimento que carrega o peso de ser um infiltrado, portando o Titã Blindado. Ele luta entre sua lealdade aos seus companheiros e seu dever para com Marley, o que causa um conflito interno significativo. Reiner é um lutador forte e resiliente, mas sua história revela um lado mais vulnerável.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Annie Leonhart -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/AnnieLeonhart.jpg' %}" alt="Annie Leonhart">
+                <h4>Annie Leonhart</h4>
+                <span>Divisão de Reconhecimento (infiltrada)</span>
+                <p>Annie é uma personagem complexa que possui o poder do Titã Fêmea. Inicialmente, ela é apresentada como fria e distante, mas ao longo da história, suas motivações e suas dificuldades emocionais são reveladas. Annie tem habilidades de combate excepcionais e sua luta para conciliar sua identidade e suas obrigações como infiltrada é central em seu arco.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+                <!-- Zeke Yeager -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki\img\ZekeYaeger.jpg' %}" alt="Zeke Yeager">
+                <h4>Zeke Yaeger</h4>
+                <span>Exército de Marley</span>
+                <p>Zeke é o portador do Titã Bestial e possui um papel crucial na trama, com suas ações e motivações ligadas ao passado de Eren. Zeke é um personagem astuto, manipulador e possui uma visão distinta sobre a luta entre Eldianos e Marleyanos. Sua complexidade e suas relações familiares acrescentam profundidade à narrativa.</p>
+                <a href="#">Leia mais</a>
+            </div>
+                            
+            <!-- Pieck Finger -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/PieckFinger.jpg' %}" alt="Pieck Finger">
+                <h4>Pieck Finger</h4>
+                <span>Exército de Marley</span>
+                <p>Pieck é a portadora do Titã Cart e é conhecida por sua inteligência e habilidade em estratégia. Ela é uma das figuras mais calmas entre os guerreiros de Marley, frequentemente observando e avaliando situações antes de agir. Sua lealdade a seus amigos e sua habilidade de adaptação a diferentes situações a tornam uma personagem intrigante.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+            <!-- Porco Galliard -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/PorcoGalliard.jpg' %}" alt="Porco Galliard">
+                <h4>Porco Galliard</h4>
+                <span>Exército de Marley</span>
+                <p>Porco, portador do Titã Mandíbula, é ágil e possui mandíbulas poderosas, tornando-o um combatente eficaz. Ele é leal à sua família e aos seus amigos, e sua história está profundamente ligada à proteção de Gabi e outros membros de sua equipe. Sua personalidade reflete tanto bravura quanto vulnerabilidade.</p>
+                <a href="#">Leia mais</a>
+            </div>
+
+            <!-- Gabi Braun -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/GabiBraun.jpg' %}" alt="Gabi Braun">
+                <h4>Gabi Braun</h4>
+                <span>Exército de Marley</span>
+                <p>Gabi é uma jovem soldada e prima de Reiner, que tem uma visão intensa sobre guerra e dever. Ela é impulsiva e determinada, disposta a fazer qualquer coisa para proteger aqueles que ama. A jornada de Gabi a leva a questionar suas crenças e lealdades, e sua evolução é uma parte importante da narrativa.</p>
+                <a href="#">Leia mais</a>
+            </div>
+                            
+            <!-- Falco Grice -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/FalcoGrice.jpg' %}" alt="Falco Grice">
+                <h4>Falco Grice</h4>
+                <span>Exército de Marley</span>
+                <p>Falco é um jovem soldado que busca proteger Gabi e outros. Sua bondade e compaixão o destacam entre os soldados, e sua trajetória o leva a se tornar um portador do Titã, o que complica ainda mais suas convicções sobre a guerra e os Titãs.</p>
+                <a href="#">Leia mais</a>
+            </div>
+                            
+            <!-- Jean Kirstein -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/JeanKirstein.jpg' %}" alt="Jean Kirstein">
+                <h4>Jean Kirstein</h4>
+                <span>Divisão de Reconhecimento</span>
+                <p>Jean é um soldado pragmático e ambicioso que muitas vezes atua como a voz da razão no grupo. Ele tem um forte desejo de sobreviver e se encontrar em meio ao caos da guerra. Sua evolução ao longo da série mostra seu crescimento em líder e amigo.</p>
+                <a href="#">Leia mais</a>
+            </div>
+                            
+            <!-- Sasha Blouse -->
+            <div class="cartao-personagens">
+                <img src="{% static 'shingeki/img/SashaBlouse.jpg' %}" alt="Sasha Blouse">
+                <h4>Sasha Blouse</h4>
+                <span>Divisão de Reconhecimento</span>
+                <p>Sasha, conhecida por seu amor por comida e suas habilidades de atiradora, é uma das personagens mais carismáticas da série. Sua natureza gentil e seu senso de humor trazem leveza à narrativa, e sua lealdade aos amigos é inabalável.</p>
+                <a href="#">Leia mais</a>
+            </div>
+        </div>
+    
+        <div class="view-all">
+            <a href="#">Ver todos</a>
+        </div>
+     </section>  
+</body>
+</html>

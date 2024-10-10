@@ -19,3 +19,6 @@ def titans(request):
 
 def muralhas(request):
     return render(request, "muralhas.html") #Pagina das muralhas Maria, Rose, Sina
+
+def personagens(request):
+    return render(request, "personagens.html") #Pagina de personagens

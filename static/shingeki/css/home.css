@@ -239,6 +239,67 @@ header .logo {
     font-weight: 500;
   }
 
+  .os-personagens {
+    text-align: center;
+    padding: 70px 20px;
+  }
+  
+.os-personagens h1 {
+    margin-top: 30px;
+    font-size: 2.5em;
+    margin-bottom: 3px;
+  }
+  
+.os-personagens p {
+    font-size: 1.0em;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .personagens {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* colunas */
+    gap: 20px;
+  }
+  
+  .cartao-personagens {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .cartao-personagens img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin-bottom: 15px;
+  }
+  
+  .cartao-personagens h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .cartao-personagens span {
+    display: block;
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 15px;
+  }
+  
+  .cartao-personagens p {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .cartao-personagens a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 500;
+  }
+
   .nove-titans {
     text-align: center;
     padding: 70px 20px;
